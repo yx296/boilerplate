@@ -41,4 +41,10 @@ class CoursesPage extends React.Component {
 	}
 }
 
+function mapStateToProps(state, ownProps) {
+	return {
+		courses: state.courses
+	}
+}
+
 export default connect(mapStateToProps, mapDispatchToProps)(CoursesPage);
