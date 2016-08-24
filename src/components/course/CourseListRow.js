@@ -10,11 +10,11 @@ const CourseListRow = ({course}) => {
 			<td>{course.category}</td>
 			<td>{course.length}</td>
 		</tr>
-	)
-}
+	);
+};
 
 CourseListRow.propTypes = {
 	course: PropTypes.object.isRequired
-}
+};
 
 export default CourseListRow;
