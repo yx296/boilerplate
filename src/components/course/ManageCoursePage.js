@@ -31,6 +31,14 @@ ManageCoursePage.propTypes = {
 
 function mapStateToProps(state, ownProps) {
 	let course = {id: '', watchHref: '', title: '', authorId: '', length: '', category: ''};
+	
+	const authorsFormattedForDropdown = state.authors.map(author => {
+		return {
+			value: author.id,
+			text: author.firstName + ' ' + author.lastName
+		};
+	});
+	
 	return {
 		course: course
 	};

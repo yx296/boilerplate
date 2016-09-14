@@ -4,7 +4,7 @@ import authors from './authorReducer';
 
 const rootReducer = combineReducers({
 	courses,
-	allAuthors 
+	authors 
 });
 
 export default rootReducer;
